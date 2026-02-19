@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #FFF9F8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E0BFB8;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #B76E79;
+}
+
+/* Testimonial expandable cards */
+.testimonial-card {
+    position: relative;
+}
+
+.testimonial-card.expanded {
+    z-index: 50;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-text {
+    transition: all 0.3s ease;
+}
+
+.testimonial-text.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.testimonial-text.line-clamp-5 {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.testimonial-card.expanded .testimonial-text {
+    display: block;
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+    -webkit-box-orient: unset;
+    overflow: visible;
+}
+
+#testimonial-backdrop {
+    pointer-events: none;
+}
+
+#testimonial-backdrop.active {
+    pointer-events: all;
+}
+
+/* Sessions dropdown: show sublist on hover (For Women, For Men, For Couples) */
+.session-group {
+    position: relative;
+}
+.session-group .session-sublist {
+    display: none !important;
+    flex-direction: column;
+    margin-top: 0;
+    padding-top: 0;
+}
+/* Keep submenu visible when hovering over the group OR the submenu itself */
+.session-group:hover .session-sublist,
+.session-group .session-sublist:hover {
+    display: flex !important;
+    flex-direction: column;
+}
+/* Larger, more comfortable hit area for group names (For Women, For Men, For Couples) */
+.session-group > span {
+    display: block;
+    padding: 14px 28px 12px !important;
+    min-height: 48px;
+    box-sizing: border-box;
+    margin-bottom: -2px;
+}
+/* Create a hover bridge - extend the hover area slightly below */
+.session-group::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: transparent;
+    pointer-events: none;
+}
+/* Make sure submenu is positioned correctly with no gap */
+.session-group .session-sublist {
+    position: relative;
+    z-index: 10;
+}

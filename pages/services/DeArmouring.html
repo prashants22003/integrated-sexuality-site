@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trauma-Informed De-Armouring | Integrated Sexuality</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../../style/main.css">
+</head>
+<body class="min-h-screen bg-[#FFF9F8] text-[#4A3B39] font-sans selection:bg-[#E0BFB8] selection:text-white scroll-smooth">
+    
+    <!-- Navigation (matches home page) -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 bg-transparent py-6">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="../index.html" class="text-xl md:text-2xl font-serif tracking-tighter text-[#B76E79] z-50">
+                <span class="font-normal">INTEGRATED</span>
+                <span class="font-bold ml-1">SEXUALITY</span>
+            </a>
+            <div id="desktop-nav" class="hidden md:flex space-x-8 items-center">
+                <a href="../index.html#hero" class="text-xs uppercase tracking-widest hover:text-[#B76E79] transition-colors font-medium">Home</a>
+                <div class="relative group" id="about-dropdown">
+                    <button class="flex items-center gap-1 text-xs uppercase tracking-widest hover:text-[#B76E79] transition-colors font-medium py-4">
+                        About <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i>
+                    </button>
+                    <div id="about-menu" class="absolute top-full left-0 bg-white shadow-xl rounded-xl border border-[#E0BFB8]/20 overflow-hidden w-48 transition-all duration-300 transform origin-top opacity-0 scale-95 invisible">
+                        <a href="../index.html#method" class="block px-6 py-3 text-sm text-[#4A3B39] hover:bg-[#FFF9F8] hover:text-[#B76E79] transition-colors border-b border-[#E0BFB8]/10">Integrated Sexuality</a>
+                        <a href="../index.html#about" class="block px-6 py-3 text-sm text-[#4A3B39] hover:bg-[#FFF9F8] hover:text-[#B76E79] transition-colors border-b border-[#E0BFB8]/10">Anchal</a>
+                        <a href="../index.html#testimonials" class="block px-6 py-3 text-sm text-[#4A3B39] hover:bg-[#FFF9F8] hover:text-[#B76E79] transition-colors">Testimonials</a>
+                    </div>
+                </div>
+                <div class="relative group" id="sessions-dropdown">
+                    <button class="flex items-center gap-1 text-xs uppercase tracking-widest hover:text-[#B76E79] transition-colors font-medium py-4">
+                        Sessions <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i>
+                    </button>
+                    <div id="sessions-menu" class="absolute top-full left-0 bg-white shadow-xl rounded-xl border border-[#E0BFB8]/20 overflow-hidden min-w-[200px] transition-all duration-300 transform origin-top opacity-0 scale-95 invisible">
+                        <div class="session-group group/session">
+                            <span class="block px-6 py-3 text-xs uppercase tracking-widest text-[#9B6B66] font-medium border-b border-[#E0BFB8]/10">For Women</span>
+                            <div class="session-sublist hidden group-hover/session:flex flex-col">
+                                <a href="SomaticSex-coaching.html" class="block px-6 py-2.5 text-sm text-[#4A3B39] hover:bg-[#FFF9F8] hover:text-[#B76E79] transition-colors">Somatic Sex Coaching</a>
+                                <a href="HolisticPelvicCare.html" class="block px-6 py-2.5 text-sm text-[#4A3B39] hover:bg-[#FFF9F8] hover:text-[#B76E79] transition-colors">Holistic Pelvic Care</a>
+                                <a href="../index.html#offerings" class="block px-6 py-2.5 text-sm text-[#4A3B39] hover:bg-[#FFF9F8] hover:text-[#B76E79] transition-colors border-b border-[#E0BFB8]/10">Vulva Mapping</a>
+                            </div>
+                        </div>
+                        <div class="session-group group/session">
+                            <span class="block px-6 py-3 text-xs uppercase tracking-widest text-[#9B6B66] font-medium border-b border-[#E0BFB8]/10">For Men</span>
+                            <div class="session-sublist hidden group-hover/session:flex flex-col">
+                                <a href="SomaticSex-coaching.html" class="block px-6 py-2.5 text-sm text-[#4A3B39] hover:bg-[#FFF9F8] hover:text-[#B76E79] transition-colors">Somatic Sex Coaching</a>
+                                <a href="DeArmouring.html" class="block px-6 py-2.5 text-sm text-[#4A3B39] hover:bg-[#FFF9F8] hover:text-[#B76E79] transition-colors border-b border-[#E0BFB8]/10">Trauma-Informed De-Armouring</a>
+                            </div>
+                        </div>
+                        <div class="session-group group/session">
+                            <span class="block px-6 py-3 text-xs uppercase tracking-widest text-[#9B6B66] font-medium">For Couples</span>
+                            <div class="session-sublist hidden group-hover/session:flex flex-col">
+                                <a href="IntimacyCoaching.html" class="block px-6 py-2.5 text-sm text-[#4A3B39] hover:bg-[#FFF9F8] hover:text-[#B76E79] transition-colors">Intimacy Training for Couples</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="../faq.html" class="text-xs uppercase tracking-widest hover:text-[#B76E79] transition-colors font-medium">FAQs</a>
+                <a href="https://calendly.com/anchal-integratedsexuality/discovery-call" target="_blank" rel="noopener noreferrer" class="px-6 py-2 bg-[#B76E79] text-white rounded-full text-xs uppercase tracking-widest hover:bg-[#9B6B66] transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                    Book Discovery Call
+                </a>
+            </div>
+            <button id="mobile-toggle" class="md:hidden text-[#B76E79] z-50">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden fixed inset-0 bg-[#FFF9F8] z-40 flex flex-col items-center justify-center space-y-6 p-6 overflow-y-auto">
+            <a href="../index.html#hero" class="text-xl font-serif mobile-menu-link">Home</a>
+            <div class="w-12 h-px bg-[#E0BFB8]/30"></div>
+            <p class="text-xs uppercase tracking-widest text-[#B76E79]">Sessions</p>
+            <a href="SomaticSex-coaching.html" class="text-lg mobile-menu-link">Somatic Sex Coaching</a>
+            <a href="HolisticPelvicCare.html" class="text-lg mobile-menu-link">Holistic Pelvic Care</a>
+            <a href="DeArmouring.html" class="text-lg mobile-menu-link">Trauma-Informed De-Armouring</a>
+            <a href="../index.html#offerings" class="text-lg mobile-menu-link">All Offerings</a>
+            <div class="w-12 h-px bg-[#E0BFB8]/30"></div>
+            <a href="../faq.html" class="text-lg mobile-menu-link">FAQs</a>
+            <div class="w-12 h-px bg-[#E0BFB8]/30"></div>
+            <a href="https://calendly.com/anchal-integratedsexuality/discovery-call" target="_blank" rel="noopener noreferrer" class="px-8 py-3 bg-[#B76E79] text-white rounded-full text-lg font-serif mobile-menu-link">Book Discovery Call</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-[70vh] flex flex-col items-center justify-center px-6 overflow-hidden">
+        <div class="absolute inset-0 -z-20">
+            <img src="../../Assets/src/dearm.png" alt="" class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute inset-0 bg-[#4A3B39]/40 -z-10"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-block py-1 px-4 mb-6 text-[#B76E79] bg-white/50 backdrop-blur-sm border border-[#E0BFB8]/30 rounded-full text-xs uppercase tracking-[0.3em]">
+                Service Offering
+            </span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif leading-tight drop-shadow-sm text-white">
+                Reintegrate safety, sensation, and embodied awareness.
+            </h1>
+            <p class="mt-8 text-lg md:text-xl text-white/90 font-light max-w-2xl mx-auto">
+                Trauma-Informed De-Armouring
+            </p>
+        </div>
+    </section>
+
+    <!-- 2. INTRODUCTION & PHILOSOPHY (from template) -->
+    <section class="py-20 px-6 bg-white border-t border-[#E0BFB8]/20">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <!-- Image Side -->
+            <div class="order-2 lg:order-1 relative">
+                <div class="absolute inset-0 bg-[#E0BFB8]/20 rounded-[2rem] transform -rotate-3 translate-x-4 translate-y-4"></div>
+                <img
+                    src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=800&auto=format&fit=crop"
+                    alt="Soft floral abstract"
+                    class="relative rounded-[2rem] w-full h-[500px] object-cover shadow-xl"
+                />
+            </div>
+            <!-- Text Side -->
+            <div class="order-1 lg:order-2">
+                <h2 class="text-sm uppercase tracking-[0.3em] text-[#B76E79] mb-6">The Philosophy</h2>
+                <h3 class="text-3xl md:text-4xl font-serif text-[#4A3B39] mb-6 leading-tight">
+                    A full body <span class="italic text-[#B76E79]">cleanse.</span>
+                </h3>
+                <div class="space-y-6 text-[#6D5B58] text-lg font-light leading-relaxed mb-10">
+                    <p>
+                        <strong class="text-[#4A3B39]">De-armouring</strong> is a type of bodywork (not a massage) that uses focused trigger point touch, sound, body stretching and breath to release stored energy to increase vibrancy, aliveness and overall well-being throughout the entire body.
+                    </p>
+                    <p>
+                        It works on the physical, emotional, mental and spiritual level to heal the heart and body from pain, dis-ease and trauma. The work will also support the nervous system to regulate and expand the window of tolerance, so that life's challenges can be met with more resilience.
+                    </p>
+                </div>
+                <!-- Session Info Box -->
+                <div class="bg-[#FFF9F8] p-8 rounded-2xl border border-[#E0BFB8]/30">
+                    <p class="text-sm uppercase tracking-widest text-[#9B6B66] mb-4 font-bold">Session Details</p>
+                    <p class="text-[#6D5B58] text-lg font-light mb-2">
+                        Sessions are <strong class="text-[#B76E79] font-medium">1.5 to 2 hours</strong> long
+                    </p>
+                    <p class="text-[#6D5B58] text-lg font-light">
+                        Priced at <strong class="text-[#B76E79] font-medium">₹15,000</strong> each
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. BENEFITS (grid from template) -->
+    <section class="py-24 px-6 bg-[#FFF9F8]">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif text-[#4A3B39] mb-4">Benefits</h2>
+                <div class="w-24 h-1 bg-[#E0BFB8] mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-x-12 gap-y-6">
+                <div class="support-item flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-transparent hover:border-[#E0BFB8]/50 transition-colors">
+                    <div class="mt-1 w-6 h-6 rounded-full bg-[#E0BFB8]/20 flex items-center justify-center shrink-0 text-[#B76E79]"><i data-lucide="flower" class="w-3 h-3"></i></div>
+                    <p class="text-[#6D5B58] font-medium">Releases numbness, sensitivity and pain to a given area</p>
+                </div>
+                <div class="support-item flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-transparent hover:border-[#E0BFB8]/50 transition-colors">
+                    <div class="mt-1 w-6 h-6 rounded-full bg-[#E0BFB8]/20 flex items-center justify-center shrink-0 text-[#B76E79]"><i data-lucide="flower" class="w-3 h-3"></i></div>
+                    <p class="text-[#6D5B58] font-medium">Enhances a sense of embodiment and aliveness</p>
+                </div>
+                <div class="support-item flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-transparent hover:border-[#E0BFB8]/50 transition-colors">
+                    <div class="mt-1 w-6 h-6 rounded-full bg-[#E0BFB8]/20 flex items-center justify-center shrink-0 text-[#B76E79]"><i data-lucide="flower" class="w-3 h-3"></i></div>
+                    <p class="text-[#6D5B58] font-medium">Sexual healing and increase the body's capacity for pleasure</p>
+                </div>
+                <div class="support-item flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-transparent hover:border-[#E0BFB8]/50 transition-colors">
+                    <div class="mt-1 w-6 h-6 rounded-full bg-[#E0BFB8]/20 flex items-center justify-center shrink-0 text-[#B76E79]"><i data-lucide="flower" class="w-3 h-3"></i></div>
+                    <p class="text-[#6D5B58] font-medium">A greater connectivity between heart, body and mind</p>
+                </div>
+                <div class="support-item flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-transparent hover:border-[#E0BFB8]/50 transition-colors">
+                    <div class="mt-1 w-6 h-6 rounded-full bg-[#E0BFB8]/20 flex items-center justify-center shrink-0 text-[#B76E79]"><i data-lucide="flower" class="w-3 h-3"></i></div>
+                    <p class="text-[#6D5B58] font-medium">Releasing stuck emotions and energetic blockages in the body</p>
+                </div>
+                <div class="support-item flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-transparent hover:border-[#E0BFB8]/50 transition-colors">
+                    <div class="mt-1 w-6 h-6 rounded-full bg-[#E0BFB8]/20 flex items-center justify-center shrink-0 text-[#B76E79]"><i data-lucide="flower" class="w-3 h-3"></i></div>
+                    <p class="text-[#6D5B58] font-medium">Feeling more empowered, confident and freer</p>
+                </div>
+                <div class="support-item flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-transparent hover:border-[#E0BFB8]/50 transition-colors">
+                    <div class="mt-1 w-6 h-6 rounded-full bg-[#E0BFB8]/20 flex items-center justify-center shrink-0 text-[#B76E79]"><i data-lucide="flower" class="w-3 h-3"></i></div>
+                    <p class="text-[#6D5B58] font-medium">Increased nervous system regulation and resilience</p>
+                </div>
+                <div class="support-item flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-transparent hover:border-[#E0BFB8]/50 transition-colors">
+                    <div class="mt-1 w-6 h-6 rounded-full bg-[#E0BFB8]/20 flex items-center justify-center shrink-0 text-[#B76E79]"><i data-lucide="flower" class="w-3 h-3"></i></div>
+                    <p class="text-[#6D5B58] font-medium">An increase in the pleasure zones in the body to enhance your solo or partnered sexual activity</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. THE PROCESS (from template) -->
+    <section class="py-24 px-6 bg-white relative overflow-hidden">
+        <div class="absolute bottom-0 left-0 opacity-5 pointer-events-none transform -translate-x-1/4 translate-y-1/4">
+            <i data-lucide="flower" class="w-[500px] h-[500px]" stroke-width="0.5"></i>
+        </div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h2 class="text-sm uppercase tracking-[0.3em] text-[#B76E79] mb-6">The Process</h2>
+            <h3 class="text-3xl md:text-4xl font-serif text-[#4A3B39] mb-10">
+                Unfreezing tension through <span class="italic text-[#B76E79]">gentle, focused touch.</span>
+            </h3>
+            <div class="bg-[#B76E79]/5 border-2 border-[#B76E79]/20 p-8 md:p-12 rounded-[2rem] mb-10 shadow-lg">
+                <p class="text-[#6D5B58] text-lg leading-relaxed max-w-2xl mx-auto font-light">
+                    The de-armouring process works on helping to end the cycle by unfreezing the tension using soft touch on areas of the body where the physical and emotional tension is held. Even though the touch is soft it feels quite deep to the client, because I will hold a point for upwards of 2 minutes and as the client breaths deeply it draws my touch further into the pain body, thereby releasing the stuck energy so that the client can feel more again.
+                </p>
+            </div>
+            <div class="bg-[#FFF9F8] p-8 rounded-2xl border border-[#E0BFB8]/30">
+                <h4 class="text-xl font-serif text-[#4A3B39] mb-4">Who does it?</h4>
+                <p class="text-[#6D5B58] text-lg leading-relaxed font-light">
+                    It is done by a trained and certified health-care practitioner such as a somatic sexologist or a sexological bodyworker. Touch administered is always one-way, where the practitioner is fully clothed and gloved if doing internal work. The sessions are organised around the learning objective of the receiver.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. HOW DO I BEGIN? (from template – two CTA cards) -->
+    <section id="begin" class="py-24 px-6 bg-[#4A3B39] text-[#FFF9F8] text-center relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-[#E0BFB8] rounded-full blur-[120px] opacity-10 pointer-events-none"></div>
+        <div class="max-w-3xl mx-auto relative z-10">
+            <h2 class="text-4xl md:text-5xl font-serif mb-6 text-white">How do I begin?</h2>
+            <p class="text-lg text-white/80 font-light mb-12 max-w-xl mx-auto">
+                You can begin by completing the intake form and scheduling a free 15-minute discovery call. This allows us to assess your needs and create a personalised path forward.
+            </p>
+            <div class="grid md:grid-cols-2 gap-6">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7Oka7LrNLRwti3PLM_0dhUw7ao_9J_DPPqeYCpLf99cly0w/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center p-8 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all group">
+                    <div class="w-12 h-12 bg-[#E0BFB8]/20 text-[#E0BFB8] rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="book-open" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-serif text-white mb-2">1. Intake Form</h3>
+                    <p class="text-sm text-white/60 mb-6">Share a bit about your journey.</p>
+                    <span class="mt-auto flex items-center justify-center gap-2 text-sm uppercase tracking-widest text-[#E0BFB8] font-bold group-hover:gap-3 transition-all">
+                        Complete Form <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </span>
+                </a>
+                <a href="https://calendly.com/anchal-integratedsexuality/discovery-call" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center p-8 bg-[#E0BFB8] text-[#4A3B39] rounded-2xl hover:bg-white transition-all shadow-xl group">
+                    <div class="w-12 h-12 bg-white/40 text-[#4A3B39] rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="calendar" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-serif mb-2">2. Discovery Call</h3>
+                    <p class="text-sm text-[#4A3B39]/70 mb-6">A free 15-minute consultation.</p>
+                    <span class="mt-auto flex items-center justify-center gap-2 text-sm uppercase tracking-widest font-bold group-hover:gap-3 transition-all">
+                        Schedule Call <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 px-6 bg-[#403230] text-white/30 text-xs text-center border-t border-white/5">
+        <p>© 2024 Integrated Sexuality. Designed with care.</p>
+    </footer>
+
+    <script src="../../script/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

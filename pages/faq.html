@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | Integrated Sexuality</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+<body class="min-h-screen bg-[#FFF9F8] text-[#4A3B39] font-sans selection:bg-[#E0BFB8] selection:text-white scroll-smooth">
+
+    <!-- Navigation (same as rest of site) -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 bg-transparent py-6">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-xl md:text-2xl font-serif tracking-tighter text-[#B76E79] z-50">
+                <span class="font-normal">INTEGRATED</span>
+                <span class="font-bold ml-1">SEXUALITY</span>
+            </a>
+            <div id="desktop-nav" class="hidden md:flex space-x-8 items-center">
+                <a href="index.html#hero" class="text-xs uppercase tracking-widest hover:text-[#B76E79] transition-colors font-medium">Home</a>
+                <div class="relative group" id="about-dropdown">
+                    <button class="flex items-center gap-1 text-xs uppercase tracking-widest hover:text-[#B76E79] transition-colors font-medium py-4">
+                        About <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i>
+                    </button>
+                    <div id="about-menu" class="absolute top-full left-0 bg-white shadow-xl rounded-xl border border-[#E0BFB8]/20 overflow-hidden w-48 transition-all duration-300 transform origin-top opacity-0 scale-95 invisible">
+                        <a href="index.html#method" class="block px-6 py-3 text-sm text-[#4A3B39] hover:bg-[#FFF9F8] hover:text-[#B76E79] transition-colors border-b border-[#E0BFB8]/10">Integrated Sexuality</a>
+                        <a href="index.html#about" class="block px-6 py-3 text-sm text-[#4A3B39] hover:bg-[#FFF9F8] hover:text-[#B76E79] transition-colors border-b border-[#E0BFB8]/10">Anchal</a>
+                        <a href="index.html#testimonials" class="block px-6 py-3 text-sm text-[#4A3B39] hover:bg-[#FFF9F8] hover:text-[#B76E79] transition-colors">Testimonials</a>
+                    </div>
+                </div>
+                <div class="relative group" id="sessions-dropdown">
+                    <button class="flex items-center gap-1 text-xs uppercase tracking-widest hover:text-[#B76E79] transition-colors font-medium py-4">
+                        Sessions <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i>
+                    </button>
+                    <div id="sessions-menu" class="absolute top-full left-0 bg-white shadow-xl rounded-xl border border-[#E0BFB8]/20 overflow-hidden min-w-[200px] transition-all duration-300 transform origin-top opacity-0 scale-95 invisible">
+                        <div class="session-group group/session">
+                            <span class="block px-6 py-3 text-xs uppercase tracking-widest text-[#9B6B66] font-medium border-b border-[#E0BFB8]/10">For Women</span>
+                            <div class="session-sublist hidden group-hover/session:flex flex-col">
+                                <a href="services/SomaticSex-coaching.html" class="block px-6 py-2.5 text-sm text-[#4A3B39] hover:bg-[#FFF9F8] hover:text-[#B76E79] transition-colors">Somatic Sex Coaching</a>
+                                <a href="services/HolisticPelvicCare.html" class="block px-6 py-2.5 text-sm text-[#4A3B39] hover:bg-[#FFF9F8] hover:text-[#B76E79] transition-colors">Holistic Pelvic Care</a>
+                                <a href="index.html#offerings" class="block px-6 py-2.5 text-sm text-[#4A3B39] hover:bg-[#FFF9F8] hover:text-[#B76E79] transition-colors border-b border-[#E0BFB8]/10">Vulva Mapping</a>
+                            </div>
+                        </div>
+                        <div class="session-group group/session">
+                            <span class="block px-6 py-3 text-xs uppercase tracking-widest text-[#9B6B66] font-medium border-b border-[#E0BFB8]/10">For Men</span>
+                            <div class="session-sublist hidden group-hover/session:flex flex-col">
+                                <a href="services/SomaticSex-coaching.html" class="block px-6 py-2.5 text-sm text-[#4A3B39] hover:bg-[#FFF9F8] hover:text-[#B76E79] transition-colors">Somatic Sex Coaching</a>
+                                <a href="services/DeArmouring.html" class="block px-6 py-2.5 text-sm text-[#4A3B39] hover:bg-[#FFF9F8] hover:text-[#B76E79] transition-colors border-b border-[#E0BFB8]/10">Trauma-Informed De-Armouring</a>
+                            </div>
+                        </div>
+                        <div class="session-group group/session">
+                            <span class="block px-6 py-3 text-xs uppercase tracking-widest text-[#9B6B66] font-medium">For Couples</span>
+                            <div class="session-sublist hidden group-hover/session:flex flex-col">
+                                <a href="services/IntimacyCoaching.html" class="block px-6 py-2.5 text-sm text-[#4A3B39] hover:bg-[#FFF9F8] hover:text-[#B76E79] transition-colors">Intimacy Training for Couples</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="faq.html" class="text-xs uppercase tracking-widest hover:text-[#B76E79] transition-colors font-medium">FAQs</a>
+                <a href="https://calendly.com/anchal-integratedsexuality/discovery-call" target="_blank" rel="noopener noreferrer" class="px-6 py-2 bg-[#B76E79] text-white rounded-full text-xs uppercase tracking-widest hover:bg-[#9B6B66] transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                    Book Discovery Call
+                </a>
+            </div>
+            <button id="mobile-toggle" class="md:hidden text-[#B76E79] z-50">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden fixed inset-0 bg-[#FFF9F8] z-40 flex flex-col items-center justify-center space-y-6 p-6 overflow-y-auto">
+            <a href="index.html#hero" class="text-xl font-serif mobile-menu-link">Home</a>
+            <div class="w-12 h-px bg-[#E0BFB8]/30"></div>
+            <a href="index.html#method" class="text-lg mobile-menu-link">Integrated Sexuality</a>
+            <a href="index.html#about" class="text-lg mobile-menu-link">Anchal</a>
+            <a href="index.html#testimonials" class="text-lg mobile-menu-link">Testimonials</a>
+            <div class="w-12 h-px bg-[#E0BFB8]/30"></div>
+            <p class="text-xs uppercase tracking-widest text-[#B76E79]">Sessions</p>
+            <a href="services/SomaticSex-coaching.html" class="text-lg mobile-menu-link">Somatic Sex Coaching</a>
+            <a href="services/HolisticPelvicCare.html" class="text-lg mobile-menu-link">Holistic Pelvic Care</a>
+            <a href="services/DeArmouring.html" class="text-lg mobile-menu-link">Trauma-Informed De-Armouring</a>
+            <a href="services/IntimacyCoaching.html" class="text-lg mobile-menu-link">Intimacy Training for Couples</a>
+            <div class="w-12 h-px bg-[#E0BFB8]/30"></div>
+            <a href="faq.html" class="text-lg mobile-menu-link">FAQs</a>
+            <div class="w-12 h-px bg-[#E0BFB8]/30"></div>
+            <a href="https://calendly.com/anchal-integratedsexuality/discovery-call" target="_blank" rel="noopener noreferrer" class="px-8 py-3 bg-[#B76E79] text-white rounded-full text-lg font-serif mobile-menu-link">Book Discovery Call</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative pt-40 pb-20 md:pt-52 md:pb-24 px-6 overflow-hidden flex flex-col items-center justify-center bg-[#FFF9F8]">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#E0BFB8]/20 to-transparent -z-10"></div>
+        <div class="max-w-3xl mx-auto text-center relative z-10 animate-fade-in-up">
+            <span class="inline-flex items-center justify-center gap-2 py-1 px-4 mb-6 text-[#B76E79] bg-white border border-[#E0BFB8]/50 rounded-full text-xs uppercase tracking-[0.3em] shadow-sm">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Clarity & Guidance
+            </span>
+            <h1 class="text-5xl md:text-6xl font-serif leading-[1.1] text-[#4A3B39] mb-6">
+                Frequently Asked <span class="italic text-[#B76E79]">Questions</span>
+            </h1>
+            <p class="max-w-xl mx-auto text-lg text-[#6D5B58] leading-relaxed font-light">
+                Everything you need to know about the practice, the sessions, and what to expect on your journey.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section id="faq" class="py-12 md:py-20 px-6 bg-white min-h-[50vh]">
+        <div class="max-w-3xl mx-auto">
+            <div class="space-y-4" id="faq-accordion">
+                <!-- 1 -->
+                <div class="faq-item border rounded-2xl transition-all duration-300 overflow-hidden border-[#E0BFB8]/30 bg-[#FFF9F8] hover:border-[#E0BFB8]" data-faq="0">
+                    <button type="button" class="faq-trigger w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
+                        <h3 class="faq-question font-serif text-lg md:text-xl pr-8 transition-colors text-[#4A3B39]">What is the difference between Sessions, Treatments, and Training?</h3>
+                        <div class="faq-icon shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 bg-white text-[#B76E79] border border-[#E0BFB8]/50"><i data-lucide="plus" class="w-4 h-4"></i></div>
+                    </button>
+                    <div class="faq-content max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 md:px-8 pb-8 text-[#6D5B58] font-light leading-relaxed space-y-4">
+                            <p><strong class="text-[#B76E79]">Somatic Sexology Sessions</strong> focus on emotional healing, embodiment, and your relationship with sexuality, pleasure, and your nervous system.</p>
+                            <p><strong class="text-[#B76E79]">Holistic Pelvic Care Treatments</strong> are hands-on therapeutic bodywork that restore the function, sensitivity, and integrity of your pelvic floor muscles, tissues, and nerves.</p>
+                            <p><strong class="text-[#B76E79]">Couples Intimacy Training</strong> is a guided somatic learning process that helps couples deepen trust, consent, communication, and intimacy.</p>
+                            <div class="bg-[#E0BFB8]/10 p-4 rounded-xl border border-[#E0BFB8]/30 mt-4">
+                                <p class="font-medium text-[#4A3B39] mb-2">In simple terms:</p>
+                                <ul class="space-y-1">
+                                    <li><span class="text-[#B76E79]">→</span> <strong>Sessions:</strong> emotional and somatic healing</li>
+                                    <li><span class="text-[#B76E79]">→</span> <strong>Treatments:</strong> physical pelvic rehabilitation</li>
+                                    <li><span class="text-[#B76E79]">→</span> <strong>Training:</strong> somatic intimacy education for couples</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="faq-item border rounded-2xl transition-all duration-300 overflow-hidden border-[#E0BFB8]/30 bg-[#FFF9F8] hover:border-[#E0BFB8]" data-faq="1">
+                    <button type="button" class="faq-trigger w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
+                        <h3 class="faq-question font-serif text-lg md:text-xl pr-8 transition-colors text-[#4A3B39]">What happens in a Somatic Sexology session?</h3>
+                        <div class="faq-icon shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 bg-white text-[#B76E79] border border-[#E0BFB8]/50"><i data-lucide="plus" class="w-4 h-4"></i></div>
+                    </button>
+                    <div class="faq-content max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 md:px-8 pb-8 text-[#6D5B58] font-light leading-relaxed space-y-4">
+                            <p>Sessions may include:</p>
+                            <ul class="list-none space-y-2 pl-2 border-l-2 border-[#E0BFB8]">
+                                <li class="pl-4">Somatic awareness and embodiment practices</li>
+                                <li class="pl-4">Breathwork and nervous system regulation</li>
+                                <li class="pl-4">Emotional integration</li>
+                                <li class="pl-4">Education about pleasure and anatomy</li>
+                                <li class="pl-4">Optional hands-on bodywork (in person, when appropriate)</li>
+                            </ul>
+                            <p>These sessions help you reconnect with your body, release shame or numbness, and deepen your capacity for pleasure and intimacy.</p>
+                            <p class="text-sm italic text-[#9B6B66]">* Available online and in person.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="faq-item border rounded-2xl transition-all duration-300 overflow-hidden border-[#E0BFB8]/30 bg-[#FFF9F8] hover:border-[#E0BFB8]" data-faq="2">
+                    <button type="button" class="faq-trigger w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
+                        <h3 class="faq-question font-serif text-lg md:text-xl pr-8 transition-colors text-[#4A3B39]">What is Holistic Pelvic Care?</h3>
+                        <div class="faq-icon shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 bg-white text-[#B76E79] border border-[#E0BFB8]/50"><i data-lucide="plus" class="w-4 h-4"></i></div>
+                    </button>
+                    <div class="faq-content max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 md:px-8 pb-8 text-[#6D5B58] font-light leading-relaxed space-y-4">
+                            <p>Holistic Pelvic Care is therapeutic pelvic bodywork that restores function, circulation, and sensitivity in the pelvic floor. It can help with:</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 pl-2 border-l-2 border-[#E0BFB8]">
+                                <div class="pl-4 flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-[#B76E79]/50 shrink-0"></div><span>Urinary incontinence</span></div>
+                                <div class="pl-4 flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-[#B76E79]/50 shrink-0"></div><span>Pelvic organ prolapse</span></div>
+                                <div class="pl-4 flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-[#B76E79]/50 shrink-0"></div><span>Painful menstruation</span></div>
+                                <div class="pl-4 flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-[#B76E79]/50 shrink-0"></div><span>Endometriosis</span></div>
+                                <div class="pl-4 flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-[#B76E79]/50 shrink-0"></div><span>Pelvic pain or tightness</span></div>
+                                <div class="pl-4 flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-[#B76E79]/50 shrink-0"></div><span>Pain during intimacy</span></div>
+                                <div class="pl-4 flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-[#B76E79]/50 shrink-0"></div><span>Genital numbness</span></div>
+                                <div class="pl-4 flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-[#B76E79]/50 shrink-0"></div><span>Scar tissue and adhesions</span></div>
+                                <div class="pl-4 flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-[#B76E79]/50 shrink-0"></div><span>Postpartum recovery</span></div>
+                                <div class="pl-4 flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-[#B76E79]/50 shrink-0"></div><span>Erection inconsistencies and ejaculatory timing</span></div>
+                                <div class="pl-4 flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-[#B76E79]/50 shrink-0"></div><span>Prostate Health</span></div>
+                            </div>
+                            <p class="font-medium text-[#4A3B39] mt-4">Treatments last 2.5–3 hours and work directly on both tissues and the nervous system.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="faq-item border rounded-2xl transition-all duration-300 overflow-hidden border-[#E0BFB8]/30 bg-[#FFF9F8] hover:border-[#E0BFB8]" data-faq="3">
+                    <button type="button" class="faq-trigger w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
+                        <h3 class="faq-question font-serif text-lg md:text-xl pr-8 transition-colors text-[#4A3B39]">Does pelvic care include internal work?</h3>
+                        <div class="faq-icon shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 bg-white text-[#B76E79] border border-[#E0BFB8]/50"><i data-lucide="plus" class="w-4 h-4"></i></div>
+                    </button>
+                    <div class="faq-content max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 md:px-8 pb-8 text-[#6D5B58] font-light leading-relaxed space-y-4">
+                            <p><strong>Yes. Internal pelvic work is an essential and integral part of Holistic Pelvic Care.</strong></p>
+                            <p>This allows direct treatment of the pelvic floor muscles and fascia to restore function, circulation, and sensitivity.</p>
+                            <p>All work is trauma-informed, gentle, and conducted with clear consent. You remain in control throughout the process.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="faq-item border rounded-2xl transition-all duration-300 overflow-hidden border-[#E0BFB8]/30 bg-[#FFF9F8] hover:border-[#E0BFB8]" data-faq="4">
+                    <button type="button" class="faq-trigger w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
+                        <h3 class="faq-question font-serif text-lg md:text-xl pr-8 transition-colors text-[#4A3B39]">What happens in a De-Armouring session?</h3>
+                        <div class="faq-icon shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 bg-white text-[#B76E79] border border-[#E0BFB8]/50"><i data-lucide="plus" class="w-4 h-4"></i></div>
+                    </button>
+                    <div class="faq-content max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 md:px-8 pb-8 text-[#6D5B58] font-light leading-relaxed space-y-4">
+                            <p>De-Armouring is a somatic bodywork process that helps release chronic tension and protective holding patterns stored in the body due to stress, trauma, or emotional suppression.</p>
+                            <p>A session may include:</p>
+                            <ul class="list-none space-y-2 pl-2 border-l-2 border-[#E0BFB8]">
+                                <li class="pl-4">Guided breathwork</li>
+                                <li class="pl-4">Gentle, sustained therapeutic touch to areas of tension</li>
+                                <li class="pl-4">Nervous system regulation practices</li>
+                                <li class="pl-4">Sound, movement, and emotional release</li>
+                                <li class="pl-4">Integration and grounding</li>
+                            </ul>
+                            <p>This process helps restore sensitivity, emotional flow, and a sense of safety and openness in the body. Each session is guided at your pace and nervous system readiness.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="faq-item border rounded-2xl transition-all duration-300 overflow-hidden border-[#E0BFB8]/30 bg-[#FFF9F8] hover:border-[#E0BFB8]" data-faq="5">
+                    <button type="button" class="faq-trigger w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
+                        <h3 class="faq-question font-serif text-lg md:text-xl pr-8 transition-colors text-[#4A3B39]">What is Couples Intimacy Training?</h3>
+                        <div class="faq-icon shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 bg-white text-[#B76E79] border border-[#E0BFB8]/50"><i data-lucide="plus" class="w-4 h-4"></i></div>
+                    </button>
+                    <div class="faq-content max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 md:px-8 pb-8 text-[#6D5B58] font-light leading-relaxed space-y-4">
+                            <p>Couples Intimacy Training helps partners rebuild trust, connection, and intimacy. This includes:</p>
+                            <ul class="list-none space-y-2 pl-2 border-l-2 border-[#E0BFB8]">
+                                <li class="pl-4">Consent education</li>
+                                <li class="pl-4">Communication tools</li>
+                                <li class="pl-4">Conscious touch practices</li>
+                                <li class="pl-4">Somatic embodiment tools</li>
+                                <li class="pl-4">Nervous system regulation practices</li>
+                            </ul>
+                            <p>This training helps couples deepen emotional and physical connection in a safe and supported way.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="faq-item border rounded-2xl transition-all duration-300 overflow-hidden border-[#E0BFB8]/30 bg-[#FFF9F8] hover:border-[#E0BFB8]" data-faq="6">
+                    <button type="button" class="faq-trigger w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
+                        <h3 class="faq-question font-serif text-lg md:text-xl pr-8 transition-colors text-[#4A3B39]">How many sessions or treatments will I need?</h3>
+                        <div class="faq-icon shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 bg-white text-[#B76E79] border border-[#E0BFB8]/50"><i data-lucide="plus" class="w-4 h-4"></i></div>
+                    </button>
+                    <div class="faq-content max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 md:px-8 pb-8 text-[#6D5B58] font-light leading-relaxed space-y-4">
+                            <p>I recommend beginning with a <strong class="text-[#B76E79]">minimum of 5 sessions or treatments</strong> for Somatic Sexology and Holistic Pelvic Care.</p>
+                            <p>This allows time to build nervous system safety, restore tissue health, and support lasting change.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="faq-item border rounded-2xl transition-all duration-300 overflow-hidden border-[#E0BFB8]/30 bg-[#FFF9F8] hover:border-[#E0BFB8]" data-faq="7">
+                    <button type="button" class="faq-trigger w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
+                        <h3 class="faq-question font-serif text-lg md:text-xl pr-8 transition-colors text-[#4A3B39]">Do you work with men?</h3>
+                        <div class="faq-icon shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 bg-white text-[#B76E79] border border-[#E0BFB8]/50"><i data-lucide="plus" class="w-4 h-4"></i></div>
+                    </button>
+                    <div class="faq-content max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 md:px-8 pb-8 text-[#6D5B58] font-light leading-relaxed space-y-4">
+                            <p><strong>Yes. I work with men by referral only.</strong></p>
+                            <p>Referrals are accepted from:</p>
+                            <ul class="list-none space-y-2 pl-2 border-l-2 border-[#E0BFB8]">
+                                <li class="pl-4">Physicians</li>
+                                <li class="pl-4">Urologists</li>
+                                <li class="pl-4">General practitioners</li>
+                                <li class="pl-4">Licensed healthcare providers</li>
+                                <li class="pl-4">Or clients who have previously worked with me</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="faq-item border rounded-2xl transition-all duration-300 overflow-hidden border-[#E0BFB8]/30 bg-[#FFF9F8] hover:border-[#E0BFB8]" data-faq="8">
+                    <button type="button" class="faq-trigger w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
+                        <h3 class="faq-question font-serif text-lg md:text-xl pr-8 transition-colors text-[#4A3B39]">Are sessions confidential?</h3>
+                        <div class="faq-icon shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 bg-white text-[#B76E79] border border-[#E0BFB8]/50"><i data-lucide="plus" class="w-4 h-4"></i></div>
+                    </button>
+                    <div class="faq-content max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 md:px-8 pb-8 text-[#6D5B58] font-light leading-relaxed">
+                            <p><strong>Yes.</strong> All sessions and treatments are strictly confidential and conducted with professionalism, care, and respect.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="faq-item border rounded-2xl transition-all duration-300 overflow-hidden border-[#E0BFB8]/30 bg-[#FFF9F8] hover:border-[#E0BFB8]" data-faq="9">
+                    <button type="button" class="faq-trigger w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
+                        <h3 class="faq-question font-serif text-lg md:text-xl pr-8 transition-colors text-[#4A3B39]">What is the cancellation policy?</h3>
+                        <div class="faq-icon shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 bg-white text-[#B76E79] border border-[#E0BFB8]/50"><i data-lucide="plus" class="w-4 h-4"></i></div>
+                    </button>
+                    <div class="faq-content max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 md:px-8 pb-8 text-[#6D5B58] font-light leading-relaxed space-y-4">
+                            <p>A minimum of <strong class="text-[#B76E79]">24 hours' notice is required</strong> to cancel or reschedule a session.</p>
+                            <p>Sessions cancelled with less than 24 hours' notice, or missed without notice, will be charged in full.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 11 -->
+                <div class="faq-item border rounded-2xl transition-all duration-300 overflow-hidden border-[#E0BFB8]/30 bg-[#FFF9F8] hover:border-[#E0BFB8]" data-faq="10">
+                    <button type="button" class="faq-trigger w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
+                        <h3 class="faq-question font-serif text-lg md:text-xl pr-8 transition-colors text-[#4A3B39]">Do you offer online sessions?</h3>
+                        <div class="faq-icon shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 bg-white text-[#B76E79] border border-[#E0BFB8]/50"><i data-lucide="plus" class="w-4 h-4"></i></div>
+                    </button>
+                    <div class="faq-content max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 md:px-8 pb-8 text-[#6D5B58] font-light leading-relaxed space-y-4">
+                            <p><strong>Yes.</strong> Somatic Sexology sessions are available online and in person.</p>
+                            <p>Pelvic Care Treatments, De-Armouring, and Couples Intimacy Training are offered exclusively in person.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 12 -->
+                <div class="faq-item border rounded-2xl transition-all duration-300 overflow-hidden border-[#E0BFB8]/30 bg-[#FFF9F8] hover:border-[#E0BFB8]" data-faq="11">
+                    <button type="button" class="faq-trigger w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
+                        <h3 class="faq-question font-serif text-lg md:text-xl pr-8 transition-colors text-[#4A3B39]">How do I begin?</h3>
+                        <div class="faq-icon shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 bg-white text-[#B76E79] border border-[#E0BFB8]/50"><i data-lucide="plus" class="w-4 h-4"></i></div>
+                    </button>
+                    <div class="faq-content max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 md:px-8 pb-8 text-[#6D5B58] font-light leading-relaxed space-y-4">
+                            <p>You can begin by completing the intake form and scheduling your first session. This allows us to assess your needs and create a personalised path forward.</p>
+                            <a href="#contact" class="inline-flex items-center gap-2 text-[#B76E79] font-medium hover:gap-3 transition-all">
+                                Start your journey <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get in Touch (matches home page contact section) -->
+    <section id="contact" class="py-24 px-6 bg-[#4A3B39] text-[#FFF9F8] relative overflow-hidden text-center">
+        <!-- Background Glows -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+            <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-[#E0BFB8] rounded-full blur-[120px] opacity-10"></div>
+            <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#B76E79] rounded-full blur-[120px] opacity-10"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h2 class="text-4xl md:text-6xl font-serif mb-8 leading-tight">
+                Your body carries a story.<br/>
+                <span class="text-[#E0BFB8] italic">It also carries the capacity to heal.</span>
+            </h2>
+            <p class="text-xl text-white/80 mb-12 font-light">
+                If you are ready to listen, soften, and return to yourself.<br/>
+                I am here to walk with you.
+            </p>
+
+            <div class="flex flex-col items-center gap-6">
+                <a href="https://calendly.com/anchal-integratedsexuality/discovery-call" target="_blank" rel="noopener noreferrer" class="px-12 py-5 bg-[#E0BFB8] text-[#4A3B39] font-bold rounded-full text-sm uppercase tracking-widest hover:bg-white transition-all shadow-xl hover:scale-105 transform duration-300 inline-block">
+                    Schedule Your Discovery Call
+                </a>
+
+                <div class="flex items-center gap-8 mt-8">
+                    <a href="#" class="flex items-center gap-2 text-[#E0BFB8] hover:text-white transition-colors">
+                        <i data-lucide="instagram" class="w-5 h-5"></i>
+                        <span class="text-sm uppercase tracking-wider">Follow on Instagram</span>
+                    </a>
+                    <a href="mailto:anchal.integratedsexuality@gmail.com" class="flex items-center gap-2 text-[#E0BFB8] hover:text-white transition-colors">
+                        <i data-lucide="mail" class="w-5 h-5"></i>
+                        <span class="text-sm uppercase tracking-wider">Email Me</span>
+                    </a>
+                </div>
+
+                <p class="mt-8 text-white/30 text-xs">anchal.integratedsexuality@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 px-6 bg-[#403230] text-white/30 text-xs text-center border-t border-white/5">
+        <p>© 2024 Integrated Sexuality. Designed with care.</p>
+    </footer>
+
+    <script src="../script/main.js"></script>
+    <script>
+        lucide.createIcons();
+
+        (function() {
+            var openIndex = 0;
+            var items = document.querySelectorAll('.faq-item');
+            var triggers = document.querySelectorAll('.faq-trigger');
+
+            function setOpen(idx) {
+                openIndex = idx;
+                items.forEach(function(item, i) {
+                    var content = item.querySelector('.faq-content');
+                    var question = item.querySelector('.faq-question');
+                    var iconWrap = item.querySelector('.faq-icon');
+                    var icon = iconWrap ? iconWrap.querySelector('[data-lucide]') : null;
+                    var isOpen = idx >= 0 && i === idx;
+                    item.classList.toggle('border-[#B76E79]', isOpen);
+                    item.classList.toggle('shadow-md', isOpen);
+                    item.classList.toggle('bg-white', isOpen);
+                    item.classList.toggle('border-[#E0BFB8]/30', !isOpen);
+                    item.classList.toggle('bg-[#FFF9F8]', !isOpen);
+                    if (question) question.classList.toggle('text-[#B76E79]', isOpen);
+                    if (content) {
+                        content.style.maxHeight = isOpen ? (content.scrollHeight + 100) + 'px' : '0';
+                        content.style.opacity = isOpen ? '1' : '0';
+                    }
+                    if (iconWrap) {
+                        iconWrap.classList.toggle('bg-[#B76E79]', isOpen);
+                        iconWrap.classList.toggle('text-white', isOpen);
+                        iconWrap.classList.toggle('rotate-180', isOpen);
+                        iconWrap.classList.toggle('bg-white', !isOpen);
+                        iconWrap.classList.toggle('text-[#B76E79]', !isOpen);
+                        if (icon) {
+                            icon.setAttribute('data-lucide', isOpen ? 'minus' : 'plus');
+                        }
+                    }
+                });
+                lucide.createIcons();
+            }
+
+            triggers.forEach(function(btn, i) {
+                btn.addEventListener('click', function() {
+                    setOpen(openIndex === i ? -1 : i);
+                });
+            });
+
+            setOpen(0);
+        })();
+    </script>
+</body>
+</html>
